@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Driver Files">
+      <UniqueIdentifier>{8E41214B-6785-4CFE-B992-037D68949A14}</UniqueIdentifier>
+      <Extensions>inf;inv;inx;mof;mc;</Extensions>
+    </Filter>
+    <Filter Include="STL">
+      <UniqueIdentifier>{e9f7b74f-673f-4861-a710-a0b6fc97df96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="khook">
+      <UniqueIdentifier>{5e3e2c14-4c2e-4428-8d48-caac96684e9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hde">
+      <UniqueIdentifier>{ac96430e-8632-4a4f-95ec-17dfd3e06725}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Inf Include="win10Rs5PatchGuard.inf">
+      <Filter>Driver Files</Filter>
+    </Inf>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DispatchIo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="import.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\global.hpp">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="vector.hpp">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="khook\hk.h">
+      <Filter>khook</Filter>
+    </ClInclude>
+    <ClInclude Include="hde\hde.h">
+      <Filter>hde</Filter>
+    </ClInclude>
+    <ClInclude Include="hde\hde_stdint.h">
+      <Filter>hde</Filter>
+    </ClInclude>
+    <ClInclude Include="hde\hde32.h">
+      <Filter>hde</Filter>
+    </ClInclude>
+    <ClInclude Include="hde\hde64.h">
+      <Filter>hde</Filter>
+    </ClInclude>
+    <ClInclude Include="hde\table32.h">
+      <Filter>hde</Filter>
+    </ClInclude>
+    <ClInclude Include="hde\table64.h">
+      <Filter>hde</Filter>
+    </ClInclude>
+    <ClInclude Include="pg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NtApi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Utilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DispatchIo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\global.cpp">
+      <Filter>STL</Filter>
+    </ClCompile>
+    <ClCompile Include="vector.cpp">
+      <Filter>STL</Filter>
+    </ClCompile>
+    <ClCompile Include="khook\hk.cpp">
+      <Filter>khook</Filter>
+    </ClCompile>
+    <ClCompile Include="hde\hde32.cpp">
+      <Filter>hde</Filter>
+    </ClCompile>
+    <ClCompile Include="hde\hde64.cpp">
+      <Filter>hde</Filter>
+    </ClCompile>
+    <ClCompile Include="pg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="doc.asm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bugcheck.asm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="pg基本流程.asm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="control flow guard.asm">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="KernelBase.asm">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="x64.asm">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
